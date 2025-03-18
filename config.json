@@ -1,0 +1,24 @@
+{
+  "adf": {
+    "subscription_id": "your-subscription-id",
+    "resource_group": "your-resource-group",
+    "factory_name": "your-adf-factory-name",
+    "monitor_interval": 60
+  },
+  "email": {
+    "smtp_server": "smtp.example.com",
+    "smtp_port": 587,
+    "sender_email": "your-email@example.com",
+    "receiver_email": "receiver@example.com"
+  },
+  "github": {
+    "repo_url": "https://github.com/your-username/your-repo.git",
+    "branch": "main",
+    "token": "your-github-token"
+  },
+  "upwork": {
+    "email": "your-upwork-email@example.com",
+    "password": "your-upwork-password",
+    "proposal_template": "Hello, I'm interested in this job..."
+  }
+}

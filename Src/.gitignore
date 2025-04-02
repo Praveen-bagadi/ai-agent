@@ -1,0 +1,8 @@
+# Recording files
+/recordings/
+*.mp4
+*.webm
+
+# Environment files
+.env
+.env.backup

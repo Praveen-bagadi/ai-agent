@@ -1,0 +1,30 @@
+FROM python:3.9-slim
+
+WORKDIR /app
+
+# Install system dependencies
+RUN apt-get update && \
+    apt-get install -y --no-install-recommends \
+    gcc \
+    python3-dev \
+    && rm -rf /var/lib/apt/lists/*
+
+# Install Python dependencies
+COPY pyproject.toml setup.cfg setup.py ./
+RUN pip install --no-cache-dir -e .
+
+# Install Playwright
+RUN playwright install && \
+    playwright install-deps
+
+# Copy application files
+COPY . .
+
+# Create config directory
+RUN mkdir -p /etc/ai-agent && \
+    [ -f /etc/ai-agent/config.json ] || cp config.json /etc/ai-agent/ && \
+    [ -f /etc/ai-agent/.env ] || cp .env.example /etc/ai-agent/.env
+
+# Set up entry point
+ENV AI_AGENT_CONFIG_DIR=/etc/ai-agent
+CMD ["ai-agent"]

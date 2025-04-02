@@ -1,0 +1,12 @@
+2025-04-01 13:54:27,214 - utils - WARNING - Env file not found: .env
+2025-04-01 13:54:27,214 - root - CRITICAL - AI Agent failed to start: Failed to load environment variables
+Traceback (most recent call last):
+  File "C:\Users\HP\Desktop\PNAI\src\main.py", line 74, in start_ai_agent
+    raise RuntimeError("Failed to load environment variables")
+RuntimeError: Failed to load environment variables
+2025-04-01 15:33:26,435 - utils - WARNING - Env file not found: .env
+2025-04-01 15:33:26,436 - root - CRITICAL - AI Agent failed to start: Failed to load environment variables
+Traceback (most recent call last):
+  File "C:\Users\HP\Desktop\PNAI\src\main.py", line 74, in start_ai_agent
+    raise RuntimeError("Failed to load environment variables")
+RuntimeError: Failed to load environment variables

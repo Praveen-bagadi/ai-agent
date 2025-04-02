@@ -1,21 +1,12 @@
-# Core dependencies
-python-dotenv          # Load environment variables from .env file
-requests               # HTTP requests (for API interactions)
-gradio                 # WebUI for interacting with the AI agent
-playwright             # Browser automation for Upwork bot
-selenium               # Alternative browser automation
-beautifulsoup4         # Web scraping (if needed)
-
-# Azure SDKs for ADF monitoring
-azure-mgmt-datafactory # Azure Data Factory monitoring
-azure-identity         # Authentication for Azure services
-
-# Email notifications
-email-validator        # Validate email addresses
-
-# GitHub API integration
-PyGithub               # GitHub automation (push, pull, repo management)
-
-# Logging & Utilities
-loguru                 # Advanced logging (optional)
-pandas                 # Data handling (if needed)
+gradio==3.50.2
+pyyaml==6.0.1
+ffmpeg-python==0.2.0
+azure-identity==1.14.0
+azure-mgmt-datafactory==2.0.0
+smtplib==0.0.1
+PyGithub==1.59.0
+azure-identity>=1.12.0
+azure-mgmt-datafactory>=2.0.0
+python-dotenv>=0.19.0
+playwright>=1.28.0
+gradio>=3.0
